@@ -4,8 +4,8 @@ import { addToStoredList } from "../../assets/utilities/addToLocal";
 
 const BookDetails = () => {
   const { bookId } = useParams();
-  const id = parseInt(bookId);
   const data = useLoaderData();
+  const id = parseInt(bookId);
   const selectedBook = data.find((book) => book.bookId === id);
   const { bookName, image } = selectedBook;
 
@@ -15,7 +15,7 @@ const BookDetails = () => {
   }
 
   return (
-    <div>
+    <div> 
       <h1> Book details: {bookId}</h1>
       <img className="h-2/4" src={image} alt={bookName} />
       <div className="flex gap-5 my-5">

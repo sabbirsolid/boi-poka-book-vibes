@@ -9,7 +9,7 @@ const links = (
       <NavLink to='/dashboard'>Dashboard</NavLink>
     </li>
     <li>
-      <NavLink to='/dashboard'>Listed Books</NavLink>
+      <NavLink to="listedbooks">Listed Books</NavLink>
     </li>
   </>
 );
